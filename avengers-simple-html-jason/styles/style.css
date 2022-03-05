@@ -1,0 +1,176 @@
+/* || General style rules */
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+
+/* || Typography */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    word-spacing: 0.8px;
+    letter-spacing: 0.4px;
+    line-height: 1.5;
+    background-color: black;
+}
+
+/* || Layout */
+
+section {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.section-content, .header-container, .footer-container {
+    margin: 0 auto;
+    width: 90%;
+}
+
+/* || Header */
+
+header {
+    background-color: black;
+    color: white;
+    min-height: 100vh;
+}
+
+.header-container .fixed-home {
+    display: block;
+    background-color: darkgoldenrod;
+    border: 3px solid darkred;
+    position: fixed;
+    left: 1em;
+    top: 1em;
+    width: 10em;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+    border-radius: 10px;
+}
+
+.header-container .fixed-home:hover {
+    background-color: yellow;
+}
+
+.header-container img {
+    width: 15em;
+    display: block;
+    margin: 0 auto;
+}
+
+/* || Navigation */
+
+.nav {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav a {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: white;
+}
+
+/* || Section hero */
+
+.section-hero {
+    background: url(../images/ironman\ small.jpg) top right / cover no-repeat;
+    height: 100vh;
+    margin-bottom: 0;
+}
+
+.section-hero .section-content {
+    color: white;
+}
+
+.section-hero > .section-content > h2 {
+    margin-bottom: 1rem;
+}
+
+.section-hero > .section-content > * {
+    width: 75%;
+}
+
+/* || Footer */
+
+.footer-container {
+    position: relative;
+}
+
+.footer-container > nav {
+    position: absolute;
+    bottom: 2em;
+    left: 0;
+    right: 0;
+}
+
+/* || common */
+
+.button {
+    text-decoration: none;
+    padding: 0.5em;
+}
+
+/* || Media query tablet breakpoint*/
+
+@media screen and (min-width: 30.0625em) {
+    
+    /* || Header */
+
+    .header-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }    
+
+    .header-container img {
+        margin: 0;
+        display: initial;
+    }
+
+    /* || Navigation */
+
+    .nav {
+        display: flex;
+    }
+
+    .nav a {
+        margin: 0 0.5em;
+    }
+
+    /* || Section hero */
+
+    .section-hero {
+        background-image: url(../images/ironman\ medium.jpg);
+    }
+
+    .section-hero .section-content > * {
+        width: 60%;
+    }
+
+    /* || Footer */
+
+    .footer-container > nav {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+/* || media query laptop breakpoint */
+
+@media screen and (min-width: 48.0625em) {
+
+    /* || Section hero */
+
+    .section-hero {
+        background-image: url(../images/ironman\ medium.jpg);
+    }
+
+    .section-hero > .section-content > * {
+        width: 35%;
+        margin: 0 auto;
+        text-align: center;
+    }
+}

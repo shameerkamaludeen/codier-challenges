@@ -1,0 +1,204 @@
+/* || General style rules */
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+/* || Typography */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    word-spacing: 0.8px;
+    letter-spacing: 0.4px;
+    line-height: 1.5;
+}
+
+/* || Layout */
+
+.header-content, 
+.section-content {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.section {
+    margin: 2em 0;
+}
+
+/* || Header */
+
+.header-content h1 {
+    background-color: #00cc66;
+    display: inline-block;
+    padding: 0.6rem;
+    color: white;
+    border-radius: 5px;
+}
+
+/* || Navigation */
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a, .sign-up {
+    text-decoration: none;
+    padding: 0.5em;
+    display: inline-block;
+    font-size: 1.1rem;
+}
+
+nav ul li a {
+    margin-right: 1em;
+    color: #222121;
+}
+
+nav ul li a:not(.sign-up):hover {
+    color: #00cc66;
+}
+
+.sign-up {
+    color: white;
+    background-color: #00cc66;
+    border-radius: 5px;
+}
+
+.sign-up:hover {
+    background-color: #048e49;
+}
+
+/* || Section hero */
+
+.section-hero {
+    color: #222121;
+}
+
+.section-hero h2 {
+    font-size: 2.5rem;
+}
+
+.section-hero h2 :nth-child(1) {
+    color: #00cc66;
+}
+
+.section-hero p {
+    font-size: 1.2rem;
+}
+
+.section-hero img {
+    display: block;
+    width: 100%;
+    margin: 2em 0;
+}
+
+/* || Section topic */
+
+.section-topic h2 {
+    text-align: center;
+}
+
+.section-topic h2 span:nth-of-type(1) {
+    font-weight: 800;
+}
+
+.section-topic h2 span:nth-of-type(2) {
+    font-weight: lighter;
+    color: rgb(0, 0, 0, 0.8);
+}
+
+.section-topic .topic-update {
+    color: rgb(0, 0, 0, 0.5);
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+/* || Section coding */
+
+.section-coding {
+    background: url(../images/photo-coding.jpg) center / cover no-repeat;
+    padding: 3em 0;
+    margin: 0;
+}
+
+.section-coding h2 {
+    color: #00cc66;
+    font-size: 2.5em;
+}
+
+.section-coding h3 {
+    color: #00cc66;
+    font-size: 2em;
+}
+
+.section-coding .section-content p {
+    color: white;
+}
+
+
+/* || Footer */
+
+.section-footer {
+    background: #222121;
+    margin: 0;
+}
+
+.section-footer .section-content {
+    padding: 1em 0;
+    color: white;
+}
+
+.section-footer .section-content p {
+    margin: 0;
+}
+
+/* || Media query for laptop breakpoint */
+@media screen and (min-width: 48.0625em) {
+
+    /* || Header */
+    .header-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    nav ul {
+        display: flex;
+    }
+
+    /* || Section hero */
+    .section-hero > .section-content {
+        display: flex;
+    }
+
+    .section-hero > .section-content>* {
+        flex: 1 1 50%;
+    }
+
+    .lead-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    /* || Section topic */
+
+    .topic-content {
+        column-count: 3;
+    }
+
+    .topic-content {
+        margin: 1em 0;
+    }
+    
+    .topic-content p {
+        margin: 0;
+    }
+
+    /* || Section coding */
+    .section-coding .section-content > * {
+        width: 50%;
+    }
+}

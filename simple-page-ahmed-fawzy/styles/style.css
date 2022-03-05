@@ -1,0 +1,166 @@
+/* || General Styles */
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+.header-wrapper, article section, .footer-wrapper {
+    width: 90%;
+    margin: 0 auto;
+}
+/* || Typography */
+body {
+    font-family: arial,x-locale-body,sans-serif;
+    font-size: 100%;
+    line-height: 1.2;
+    letter-spacing: 0.4px;
+    word-spacing: 0.8px;
+}
+
+/* || Layout */
+
+body {
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+}
+
+/* || Header */
+header {
+    color: #4bb1fa;
+}
+
+/* || Navigation */
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul a {
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5em 0;
+    color: inherit;    
+    display: inline-block;
+}
+
+/* || Article */
+
+article {
+    background-image: linear-gradient(45deg,#4bb1fa,#4b7bec);
+    color: white;
+}
+
+article section {
+    padding: 2em 0;
+}
+
+/* || Article lead section */
+
+.lead-section {
+    margin-bottom: 2em;
+}
+
+.lead-section h2 {
+    font-size: 2.5em;
+}
+
+.lead-section p {
+    font-size: 1.2em;
+}
+
+.lead-section a {
+    text-decoration: none;
+    background-color: #ff4545;
+    color: inherit;
+    padding: 0.8em;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+/* || Article square area */
+.square-wrapper {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.square-wrapper>div {
+    margin: 0.8em;
+    border-radius: 5px;
+}
+
+.square-wrapper .column1 {
+    background-color: #778ca3;
+    flex-grow: 1;
+}
+
+.square-wrapper .column2 {
+    flex-grow: 2;
+}
+
+.square-wrapper .column3 {
+    background-color: #fd9644;
+    flex-grow: 6;
+}
+
+.square-wrapper .column2 {
+    display: flex;
+}
+
+.square-wrapper .column2 div {
+    flex-grow: 1;
+    background-color: #fc5c65;
+    border-radius: 5px;
+}
+
+.square-wrapper .column2 div:nth-child(1) {
+    margin-right: 0.8em;
+}
+
+/* || Media query for tablet breakpoint */
+
+@media  screen and (min-width: 30.0625em) {
+    /* || Header */
+    .header-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    /* || Navigation */
+    nav ul {
+        display: flex;
+    }
+
+    nav ul a {
+        padding-right: 1em;
+    }
+    
+    /* || Footer */
+    footer p {
+        text-align: center;
+    }
+}
+
+/* || Media query for laptop breakpoint */
+
+@media screen and (min-width: 48.0625em){
+    /* || Article */
+    article section {
+        display: flex;
+        align-items: center;
+    }
+
+    .lead-section, .square-wrapper {
+        flex: 1 1 50%;
+    } 
+
+    /* || Article lead section */
+    .lead-section {
+        margin-bottom: 0;
+        margin-right: 2em;
+    }
+}

@@ -1,0 +1,202 @@
+/* || General style rules */
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+/* || Typography */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    word-spacing: 0.8px;
+    letter-spacing: 0.4px;
+}
+
+/* || Layout */
+
+body {
+    background-color: black;
+}
+
+.section {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.section-content, .header-content, .footer-content {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* || Header */
+
+.header-content {
+    padding-top: 0.6em;
+    padding-bottom: 0.6em;
+}
+
+.header-content img {
+    width: 4em;
+}
+
+/* || Navigation */
+
+.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav > li > a {
+    text-decoration: none;
+    display: block;
+    padding: 0.5em;
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.nav > li > a:hover {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/* || Section hero */
+
+.section.section-hero {
+    margin-top: 0;
+}
+
+.hero-description {
+    color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.section-hero {
+    background: url(../images/realm-640.jpg) center right / cover no-repeat;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.section-hero > .section-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* min-height: 30em; */
+}
+
+
+.hero-image > img {
+    display: block;
+    width: 100%;
+}
+
+.section-hero .hero-description {
+    padding: 1em;
+    border-radius: 10px;
+    align-self: center;
+}
+
+.section-hero .hero-description > h1 {
+    display: inline;
+    margin-top: 0;
+}
+
+.section-hero .hero-description > p {
+    display: inline;
+    margin-bottom: 0;
+    font-size: 1.2em;
+}
+
+/* || Section gallery */
+
+.section-gallery > .section-content {
+    width: 100%;
+    margin: 0;
+}
+
+.section-gallery > .section-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.section-gallery > .section-content > img {
+   margin: 0.2em;
+   flex: 1 1 100%;
+}
+
+/* || Footer */
+
+.footer-content {
+    padding-top: 1em;
+    padding-bottom: 1em;    
+}
+
+.footer-content img {
+    width: 15em;
+}
+
+
+/* || Media query for tablet breakpoint */
+
+@media screen and (min-width: 30.0625em) {
+
+    /* || Navigation */
+
+    .header-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav {
+        display: flex;
+    }
+
+    /* || Section hero */
+
+    .section-hero {
+        background-image: url(../images/realm-800w.jpg);
+    }
+
+    /* || Section gallery */
+
+    .section-gallery > .section-content {
+        flex-direction: row;
+    }
+
+    /* || Footer */
+
+    .footer-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+}
+
+/* || Media query for laptop breakpoint */
+
+@media screen and (min-width: 48.0625em) {
+
+    /* || Section hero */
+
+    .section-hero {
+        background-image: url(../images/realm-1280w.jpg);
+    }
+
+    .section-hero > .section-content {
+        flex-direction: row;
+    }
+
+    .section-hero > .section-content :nth-child(1) {
+        order: 2;
+        flex: 3;
+    }
+
+    .section-hero > .section-content :nth-child(2) {
+        order: 1;
+        flex: 2;
+    }
+}

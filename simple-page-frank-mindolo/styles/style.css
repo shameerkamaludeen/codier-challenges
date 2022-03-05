@@ -1,0 +1,112 @@
+/* || General rules */
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+/* || Typography */
+
+body {
+    font-family: arial,x-locale-body,sans-serif;
+    line-height: 1.2;
+    letter-spacing: 0.4px;
+    word-spacing: 0.8px;
+}
+
+header, article {
+    color: white;
+}
+
+article section h2, footer {
+    color: #70A715;
+}
+
+/* || Layout */
+
+body {
+    background-image: url(../images/wyhgo45zlqaslhicdftj.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    min-height: 100vh;
+}
+
+.header-wrapper, section, footer p {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* || Header */
+
+header {
+    padding-top: 0.8em;
+}
+
+header h1 {
+ background-color: #84BD27;
+ display: inline-block;
+ padding: 0.4em;
+ border-radius: 5px;
+ margin-right: 1rem;
+}
+
+/* || Navigation*/
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul a {
+    text-decoration: none;
+    padding: 0.5em 0;
+    font-size: 1.1em;
+    display: inline-block;
+    color: inherit;
+    margin-right: 1rem;
+}
+
+nav ul a:hover {
+    background-color: #84BD27;
+    border-radius: 5px;
+    padding: 0.8em;
+}
+
+/* || Article*/
+
+article section {
+    padding-top: 1em;
+}
+
+/* || Footer*/
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1em 0;
+}
+
+/* || Media query for tablet breakpoint*/
+
+@media screen and (min-width: 30.0625em) {
+
+    /* || Header */
+    .header-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    /* || Navigation */
+    nav ul {
+        display: flex;
+    }
+    
+    /* || Footer */
+    footer p {
+        text-align: center;
+    }
+}

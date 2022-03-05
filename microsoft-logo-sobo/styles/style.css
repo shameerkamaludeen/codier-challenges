@@ -1,0 +1,71 @@
+/* || General style rules */
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+/* || Typography */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    word-spacing: 0.8px;
+    letter-spacing: 0.4px;
+    color: #747474;
+}
+
+/* || Layout */
+
+.section {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.section-content, .header-content, .footer-content {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* || Section */
+
+.section-hero .section-content {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.section-hero .wrapper-logo {
+    display: flex;
+    flex-wrap: wrap;
+    width: 220px;
+    align-self: center;
+    margin-right: 1em;
+}
+
+.section-hero .section-content > h1  {
+    font-size: 10rem;
+}
+
+.section-hero .wrapper-logo > div {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    flex: 0 0 auto;
+    margin: 5px;
+}
+
+.section-hero .wrapper-logo :nth-child(1) {
+ background-color: #ff4a18;
+}
+
+.section-hero .wrapper-logo :nth-child(2) {
+    background-color: #5abb00;
+}
+   
+.section-hero .wrapper-logo :nth-child(3) {
+    background-color: #00a5f2;
+}
+
+.section-hero .wrapper-logo :nth-child(4) {
+    background-color: #ffba00;
+}
