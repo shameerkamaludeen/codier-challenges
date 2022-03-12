@@ -95,17 +95,23 @@ header {
 
 /* || Footer */
 
-.footer-container {
+footer {
     position: relative;
 }
 
-.footer-container > nav {
+.footer-container {
     position: absolute;
-    bottom: 2em;
+    bottom: 1em;
     left: 0;
     right: 0;
 }
 
+footer .attribution {
+    color: white;
+    font-size: 0.75rem;
+    text-align: center;
+    margin: 0.5em 0;
+}
 /* || common */
 
 .button {

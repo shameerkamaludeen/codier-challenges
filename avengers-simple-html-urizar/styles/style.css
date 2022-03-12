@@ -137,6 +137,12 @@ body {
     width: 15em;
 }
 
+footer + .attribution {
+    color: white;
+    font-size: 0.75rem;
+    text-align: center;
+    margin: 0.5em 0;
+}
 
 /* || Media query for tablet breakpoint */
 
