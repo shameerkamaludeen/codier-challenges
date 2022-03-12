@@ -180,6 +180,12 @@ footer + .attribution {
         align-items: center;
     }
 
+    footer .attribution {
+        font-size: 0.75rem;
+        text-align: center;
+        padding: 0.5em 0;
+        color: white;
+    }
 }
 
 /* || Media query for laptop breakpoint */
