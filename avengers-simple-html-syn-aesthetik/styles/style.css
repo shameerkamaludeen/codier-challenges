@@ -179,6 +179,18 @@ footer .nav > li > a {
     color: #7ecdec;
 }
 
+footer .attribution {
+    color: white;
+    font-size: 0.75rem;
+    text-align: center;
+    margin: 0.5em 0;
+}
+
+footer .attribution a:link, 
+footer .attribution a:visited {
+    color: #7ecdec;
+}
+
 /* || Media query for tablet breakpoint */
 
 @media screen and (min-width: 30.0625em) {
